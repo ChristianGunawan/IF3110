@@ -1,0 +1,6 @@
+webede\services\DBHandler.class
+webede\App.class
+webede\services\IHelloService.class
+webede\services\HelloService.class
+webede\services\DorayakiService.class
+webede\services\DorayakiServiceImpl.class
