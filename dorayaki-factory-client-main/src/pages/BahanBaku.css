@@ -1,0 +1,29 @@
+.judul{
+	padding-top: 20%;
+	padding-left: 50%;
+}
+
+.createBahanBaku{
+    line-height: 1.4;
+    border-radius: 3px;
+	width: 250px;
+    padding-left: 35%;
+	height: 20px;
+    padding-bottom: 2%;
+}
+
+.labelBahanBaku{
+    padding-right: 35%;
+}
+
+.createbutton{
+    background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 10px 24px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 12px;
+    margin-right: 25%;
+}

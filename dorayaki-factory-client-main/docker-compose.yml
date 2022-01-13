@@ -1,0 +1,40 @@
+version: '3'
+services:
+  react-app:
+    image: react-app
+    stdin_open: true
+    ports:
+      - "3000:3000"
+
+  server-app:
+    container_name: server-app
+    image: node:16
+    volumes:
+      - '${../dorayaki-factory-server}/:/app'
+    tty: true
+    ports:
+    - 3000:3000
+    environment:
+      ENV: dev
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: webede
+      MYSQL_USER: ""
+      MYSQL_PASSWORD: ""
+      MYSQL_HOST: mysql-app
+    command: >
+      bash -c "cd /app
+      && echo install dep
+      && npm i
+      && npm run dev"
+
+  mysql-app:
+    container_name: mysql-app
+    image: mysql:8
+    ports:
+      - "127.0.0.1:3307:3307"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+      MYSQL_HOST: ${MYSQL_HOST}
