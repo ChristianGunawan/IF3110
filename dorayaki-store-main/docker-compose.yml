@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  php:
+    container_name: webede
+    image: php:7.4-apache
+    build: .
+    ports:
+      - 80:80
+    volumes:
+      - .:/var/www/html/

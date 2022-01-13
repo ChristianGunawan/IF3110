@@ -1,0 +1,17 @@
+table{
+    width : 100%;
+}
+
+table, th, td {
+    border:1px solid black;
+    text-align: center;
+}
+
+.back{
+    margin-top : 10px;
+}
+
+.shopcart{
+    margin: 0 auto;
+    text-align: center;
+}

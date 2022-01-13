@@ -1,0 +1,20 @@
+body{
+    margin:0px;
+    padding: 0px;
+    background-color: #eef8ff;
+    justify-content: center;
+}
+
+.box{
+    width: 800px;
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 25px;
+    padding: 5px;
+    background-color: #62d8ec;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}

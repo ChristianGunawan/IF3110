@@ -1,0 +1,52 @@
+.box{
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 25px auto;
+    padding: 5px;
+    background-color: #62d8ec;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    text-align:center;
+}
+
+.nama_dorayaki {
+    width: 20%;
+    padding: 2px 2px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.gambar {
+    width: 20%;
+    padding: 2px 2px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    
+}
+.harga{
+    width: 20%;
+    padding: 2px 2px;
+    margin: 20px auto;
+    box-sizing: border-box;
+} 
+.stock{
+    width: 20%;
+    padding: 2px 2px;
+    margin: 20px auto;
+    box-sizing: border-box;
+    
+} 
+.deskripsi{
+    width: 50%;
+    padding: 2px 2px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.submit{
+    margin : 8px;
+}
